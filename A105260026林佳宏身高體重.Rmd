@@ -1,0 +1,16 @@
+sys_time <- Sys.time() # 系統時間
+sys_time # 看起來跟???字相同
+class(sys_time)
+
+my_weight
+my_height <- 165
+my_weight <- 60
+
+165
+60
+
+bmi <- (60) / (165/ 100)^2
+bmi
+
+my_name <- "jerry"
+my_name
