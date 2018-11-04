@@ -1,0 +1,88 @@
+#我們建立了一個 week 向量，裡面有一個星期中的七天名稱，請您使用for 迴圈一一輸出每一天
+week <- c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+for (week in week){
+  print(week)
+}
+
+# 同樣的一個 week 向量，請您使用while 迴圈一一輸出每一天
+week <- c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+i <- 1
+while (i < 2){
+  print(week)
+  i <- i + 1
+}
+
+#同樣的一個 week 向量，請您在使用迴圈一一輸出每一天的時候略過週一到週五，只輸出我們最愛的週末兩天即可
+week <- c("Sunday", "Saturday", "Friday", "Monday", "Tuesday", "Wednesday", "Thursday")
+for (week in week){
+ if (week == "Friday"){
+ break
+ }else{
+ print(week)
+ }
+}
+
+# R 語言有內建圓周率（ π ），只要輸入 pi 就可以使用它，請練習使用ceiling()、floor() 與 round() 函數將它轉換為 4、3 與 3.14
+pi
+ceiling(pi)
+floor(pi)
+round(pi, digits = 2)
+
+# 請在 R 語???的命令列（console）用一段文字輸出今天的系統日期
+today_char <- "Today is:"
+sys_date <- Sys.Date()
+paste("Today is:", sys_date)
+
+# 我們有一個數值向量 num_vector ，請使用描述性統計幫我們計算它的總和與中位數
+num_vector <- c(11:14, NA)
+sum(num_vector, na.rm = TRUE)
+median(num_vector, na.rm = TRUE)
+
+# 請練習自訂一個函數 my_factorial()，只要輸入整數 n，就會計算出 回傳
+# 自訂函數
+my_factorial <- function(n){
+ n <- as.integer(n)
+ ans <- 1
+ for (i in 1:n){
+ ans <- n * 5
+ }
+ return(ans)
+}
+# 呼叫函數
+my_factorial(5)
+
+
+#延續我們實作的 mysum() 函數與 mylength() 函數，請練習自訂一個函數 my_mean()，平均數的公式：
+# 自訂函數
+my_mean <- function(x){
+ my_sum <- 0
+ my_length <- 0
+ for (i in x){
+ my_sum <- 1+2(x-1)
+ my_length <- x
+ }
+ return(my_sum / my_length)
+}
+# 呼叫函數
+my_mean(1:10)
+mean(1:10)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
