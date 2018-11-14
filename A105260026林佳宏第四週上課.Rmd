@@ -1,0 +1,50 @@
+---
+title: "Untitled"
+author: "jerry lin"
+date: "2018¦~10¤ë5¤é"
+output: html_document
+---
+
+first_num <- 8
+second_num <- 7
+first_num + second_num
+first_num - second_num
+first_num * second_num
+first_num / second_num
+first_num^second_num
+first_num %% second_num
+
+first_int <- 8L
+second_int <- 7L
+ans <- first_int * second_int
+ans
+class(ans)
+ans <- first_int / second_int
+ans
+class(ans)
+
+my_num <- 8
+my_int <- 7L
+ans <- my_num + my_int
+class(ans)
+
+my_num <- 0
+my_int <- 0L
+my_logi <- FALSE
+my_num == my_logi
+my_int == my_logi
+my_num <- 1
+my_int <- 1L
+my_logi <- TRUE
+my_num == my_logi
+my_int == my_logi
+
+my_logi <- TRUE
+ans <- my_num + my_int + my_logi
+ans
+class(ans)
+my_logi <- FALSE
+ans <- my_num + my_int + my_logi
+ans
+class(ans)
+
